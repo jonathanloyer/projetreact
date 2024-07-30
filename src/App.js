@@ -1,24 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from './components/logo';
+import Menu from './components/menu';
+import Titre from './components/titre';
 
 function App() {
+  // ici le code de fonctionnement
+  // du composant App
+  //...
+  // const tabNoms = [
+  //   "Jonathan",
+  //   "Mickael",
+  //   "Jean",
+  // ]
+  // let authorName = "";
+  // let i = 0;
+  // let id = window.setInterval(() => {
+  //   authorName = tabNoms[i];
+  //   i++;
+  //   if (i > 2) {
+  //     i = 0;
+  //   }
+  //   console.log(authorName)
+  // }, 1000)
+  // console.log(id)
+  // dans le return ci-dessous
+  // l'ossature du composant App
+  // en html
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div id="app-container" className="App">
+      <header className='container-struct'>
+        <div className='menu-rep'>
+          <div className='left-menu'>
+            <Logo />
+            <Titre />
+          </div>
+            <Menu />
+        </div>
+
       </header>
     </div>
+
   );
 }
 
